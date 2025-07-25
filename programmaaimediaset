@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Workshop IA Generativa – Mediaset</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --primary: #00ADEF;
+      --dark: #1d1d1b;
+      --accent: #262626;
+      --light: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--accent);
+      color: var(--light);
+      padding: 2rem 1rem 2.5rem;
+      text-align: center;
+      border-bottom: 3px solid var(--primary);
+    }
+
+    .brand {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .brand .highlight {
+      color: var(--primary);
+    }
+
+    header h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-top: .6rem;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin-top: .4rem;
+      font-size: 1.125rem;
+    }
+
+    header p.location {
+      color: var(--primary);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .agenda-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1.75rem;
+      background: var(--accent);
+      padding: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .agenda-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, .6);
+    }
+
+    .icon {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-right: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .agenda-content {
+      flex: 1;
+    }
+
+    .agenda-content h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: .25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .agenda-content .time {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .agenda-content p {
+      margin: 0.2rem 0;
+    }
+
+    .agenda-logo img {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+    }
+
+    @media (max-width: 640px) {
+      .agenda-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .agenda-content {
+        margin-top: 1rem;
+      }
+
+      .agenda-logo {
+        margin-top: 1rem;
+      }
+
+      .agenda-content h3 {
+        justify-content: center;
+      }
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: .9rem;
+      color: #999;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .download-link {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      color: var(--primary);
+    }
+
+    .download-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="brand">Med<span class="highlight">i</span><span class="highlight">a</span>set</h1>
+  <h2>Workshop – Intelligenza Artificiale Generativa</h2>
+  <p class="location">Cologno Monzese, 15 Settembre 2025</p>
+  <p>Sala Camana, ore 9:45</p>
+</header>
+
+<main>
+
+  <section class="agenda-item">
+    <div class="icon"><i class="fas fa-handshake"></i></div>
+    <div class="agenda-content">
+      <h3>Welcome</h3>
+      <p class="time">15 min</p>
+      <p><strong>Speaker:</strong> Niccolò Querci</p>
+    </div>
+    <div class="agenda-logo">
+      <img src="https://aiworkshopmediaset.s3.amazonaws.com/mediaset_logo.jpeg" alt="Logo">
+    </div>
+  </section>
+
+  <section class="agenda-item">
+    <div class="icon"><i class="fas fa-rocket"></i></div>
+    <div class="agenda-content">
+      <h3>AI Generativa, dalle chat agli agenti</h3>
+      <p class="time">40 min</p>
+      <p><strong>Speaker:</strong> Antonio Faraldi</p>
+    </div>
+    <div class="agenda-logo">
+      <img src="https://aiworkshopmediaset.s3.amazonaws.com/BCG_Corporate_Logo.png" alt="BCG">
+    </div>
+  </section>
+
+  <section class="agenda-item">
+    <div class="icon"><i class="fas fa-scale-balanced"></i></div>
+    <div class="agenda-content">
+      <h3>AI Act e primi elementi di “guard-railing” per l’Azienda</h3>
+      <p class="time">30 min</p>
+      <p><strong>Speaker:</strong> Partner PWC</p>
+    </div>
+    <div class="agenda-logo">
+      <img src="https://aiworkshopmediaset.s3.amazonaws.com/pwc.png" alt="PwC">
+    </div>
+  </section>
+
+  <section class="agenda-item">
+    <div class="icon"><i class="fas fa-mug-saucer"></i></div>
+    <div class="agenda-content">
+      <h3>Coffee Break</h3>
+      <p class="time">15 min</p>
+    </div>
+  </section>
+
+  <section class="agenda-item">
+    <div class="icon"><i class="fas fa-lightbulb"></i></div>
+    <div class="agenda-content">
+      <h3>Programma <b>MedIAset</b></h3>
+      <p class="time">30 min</p>
+      <p><strong>Speaker:</strong> Marcello Galli, Luca Poloni</p>
+    </div>
+    <div class="agenda-logo">
+      <img src="https://aiworkshopmediaset.s3.amazonaws.com/mediaset_logo.jpeg" alt="MedIAset">
+    </div>
+  </section>
+
+  <section class="agenda-item">
+    <div class="icon"><i class="fas fa-wand-magic"></i></div>
+    <div class="agenda-content">
+      <h3>Tips & Tricks</h3>
+      <p class="time">50 min</p>
+      <p><strong>Speaker:</strong> Team BCG-Reply</p>
+    </div>
+    <div class="agenda-logo">
+      <img src="https://aiworkshopmediaset.s3.amazonaws.com/bcgreply.png" alt="BCG Reply">
+    </div>
+  </section>
+
+  <section class="agenda-item">
+    <div class="icon"><i class="fas fa-flag-checkered"></i></div>
+    <div class="agenda-content">
+      <h3>Fine lavori</h3>
+      <p class="time">10 min</p>
+      <p><strong>Speaker:</strong> Marcello Galli, Luca Poloni</p>
+    </div>
+    <div class="agenda-logo">
+      <img src="https://aiworkshopmediaset.s3.amazonaws.com/mediaset_logo.jpeg" alt="Fine lavori">
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <a href="https://aiworkshopmediaset.s3.amazonaws.com/esploriamo_il_mondo_dei_prompt.pdf" class="download-link" download>Scarica la guida “Prompting efficace”</a><br>
+  &copy; 2025 Mediaset – Direzione Tecnologie<br>
+</footer>
+
+</body>
+</html>
